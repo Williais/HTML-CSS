@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes ou fique alterando 
+        o tamanho da página
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem Flexivel">
+    </picture>
+    <h1>Adicionar Mídias</h1>
+    <p>vamos aprender como adicionar audios</p>
+    <p>há duas maneiras. umas mais simples e a outra que é o ideal</p>
+
+    <audio src="midias/The Mumbai Beat - Hanu Dixit.mp3" autoplay controls></audio> <!--O autoplay nao ta pegando no chrome-->
+    <p>agora da maneira mais ideal</p>
+    <audio preload="metadata" loop autoplay controls>
+        <source src="midias/The Mumbai Beat - Hanu Dixit.mp3" type="audio/mpeg">
+    </audio>
+    
+
+</body>
+</html>
